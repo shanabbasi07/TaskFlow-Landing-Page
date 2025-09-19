@@ -1,0 +1,12 @@
+:root {
+  --accent: #7c3aed;
+}
+
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.glass {
+  background: rgba(199, 191, 191, 0.06);
+  backdrop-filter: blur(6px);
+}

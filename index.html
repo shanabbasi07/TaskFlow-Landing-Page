@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TaskFlow — Organize your day</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-sky-800 via-indigo-700 to-purple-700 text-slate-100">
+
+  <div class="max-w-6xl mx-auto px-6 py-14">
+
+
+    <header class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
+          <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-xl">TaskFlow</div>
+          <div class="text-xs text-white/60 -mt-0.5">Organize. Focus. Finish.</div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:underline" href="#features">Features</a>
+        <a class="hover:underline" href="#reviews">Reviews</a>
+        <a class="hover:underline" href="#pricing">Pricing</a>
+        <button id="ctaTop" class="ml-3 bg-white text-slate-900 px-4 py-2 rounded-md font-semibold shadow-sm hover:scale-105 transition">Get Started</button>
+      </nav>
+
+     
+      <button id="menuBtn" class="md:hidden p-2 rounded-md bg-white/6">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </header>
+
+    
+    <section class="grid md:grid-cols-2 gap-8 items-center mb-14">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+          TaskFlow — Make every day <span class="text-white/95">productive</span>
+        </h1>
+        <p class="text-slate-200/90 mb-6 max-w-xl">
+          Simple, delightful task management for individuals and teams. Plan your day, track progress,
+          and ship more — without getting overwhelmed.
+        </p>
+
+        <div class="flex gap-3">
+          <button id="getStarted" class="px-5 py-3 bg-white text-slate-900 rounded-lg font-semibold shadow-lg hover:scale-105 transition">
+            Try TaskFlow — It's Free
+          </button>
+          <button class="px-4 py-3 border border-white/20 rounded-lg text-white/90 hover:bg-white/5 transition" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+            See Pricing
+          </button>
+        </div>
+
+        <div class="mt-6 text-sm text-white/70">
+          <strong>Works on web & mobile</strong> — sign up in 30 seconds.
+        </div>
+      </div>
+
+    
+      <div class="glass rounded-2xl p-5 shadow-2xl">
+        <div class="bg-gradient-to-br from-white/6 to-white/2 p-4 rounded-xl">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sm font-semibold">Today</div>
+            <div class="text-xs text-white/60">3 tasks</div>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 p-3 bg-white/5 rounded-lg">
+              <input type="checkbox" class="mt-1" checked>
+              <div>
+                <div class="font-medium">Finish landing page</div>
+                <div class="text-xs text-white/60">Design + deploy</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 p-3 bg-white/4 rounded-lg opacity-90">
+              <input type="checkbox" class="mt-1">
+              <div>
+                <div class="font-medium">Plan sprint review</div>
+                <div class="text-xs text-white/60">Discuss priorities</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 p-3 bg-white/4 rounded-lg opacity-90">
+              <input type="checkbox" class="mt-1">
+              <div>
+                <div class="font-medium">Email onboarding</div>
+                <div class="text-xs text-white/60">Send to new users</div>
+              </div>
+            </li>
+          </ul>
+          <div class="mt-4 text-xs text-white/60">Integrations: Calendar · Slack · GitHub</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="features" class="mb-14">
+      <h2 class="text-2xl font-bold mb-6 reveal">Features</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+    
+        <div class="reveal glass p-6 rounded-xl shadow-lg">
+          <div class="w-12 h-12 flex items-center justify-center rounded-md mb-4 bg-gradient-to-br from-purple-500 to-indigo-500">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+              <path d="M16 3v4M8 3v4" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-1">Daily Planner</h3>
+          <p class="text-sm text-white/75">Plan your day with priority slots and time blocks — focus on what matters.</p>
+        </div>
+        <div class="reveal glass p-6 rounded-xl shadow-lg">
+          <div class="w-12 h-12 flex items-center justify-center rounded-md mb-4 bg-gradient-to-br from-emerald-400 to-green-400">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M3 12h18"></path>
+              <path d="M7 16l5-8 5 8"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-1">Progress Tracking</h3>
+          <p class="text-sm text-white/75">Kanban-style boards and progress bars to visualize work and momentum.</p>
+        </div>
+        <div class="reveal glass p-6 rounded-xl shadow-lg">
+          <div class="w-12 h-12 flex items-center justify-center rounded-md mb-4 bg-gradient-to-br from-orange-400 to-rose-400">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M12 20v-6" stroke-linecap="round"></path>
+              <path d="M12 4v6" stroke-linecap="round"></path>
+              <path d="M5 12h14" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-1">Team Sync</h3>
+          <p class="text-sm text-white/75">Shared projects, mentions, and simple handoffs — reduce meetings, ship faster.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="reviews" class="mb-14">
+      <h2 class="text-2xl font-bold mb-6 reveal">What our users say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="reveal glass p-6 rounded-xl">
+          <p class="text-sm text-white/90">"TaskFlow changed how our small team plans — sprints are shorter and clearer."</p>
+          <div class="mt-4 text-xs text-white/70">— Maya, Product Manager</div>
+        </blockquote>
+        <blockquote class="reveal glass p-6 rounded-xl">
+          <p class="text-sm text-white/90">"I love the minimalist UI. I get more done and the focus timer helps."</p>
+          <div class="mt-4 text-xs text-white/70">— Luis, Freelancer</div>
+        </blockquote>
+        <blockquote class="reveal glass p-6 rounded-xl">
+          <p class="text-sm text-white/90">"Great integrations and very fast. Onboarding took us 10 minutes."</p>
+          <div class="mt-4 text-xs text-white/70">— Aisha, Team Lead</div>
+        </blockquote>
+      </div>
+    </section>
+
+ 
+    <section id="pricing" class="mb-14">
+      <h2 class="text-2xl font-bold mb-6 reveal">Pricing</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+    
+        <div class="reveal p-6 rounded-xl glass shadow-lg flex flex-col">
+          <div class="text-sm font-semibold text-white/90 mb-3">Free</div>
+          <div class="text-3xl font-bold mb-3">Free</div>
+          <ul class="text-sm text-white/75 mb-6 space-y-2">
+            <li>✔️ Up to 5 projects</li>
+            <li>✔️ Basic integrations</li>
+            <li>✔️ Community support</li>
+          </ul>
+          <button class="mt-auto bg-white text-slate-900 px-4 py-2 rounded-md font-semibold hover:scale-105 transition">Get started</button>
+        </div>
+        <div class="reveal p-6 rounded-xl glass shadow-lg transform scale-100 border border-white/10">
+          <div class="text-sm font-semibold text-white/90 mb-3">Pro</div>
+          <div class="text-3xl font-bold mb-3">$8<span class="text-sm">/mo</span></div>
+          <ul class="text-sm text-white/75 mb-6 space-y-2">
+            <li>✔️ Unlimited projects</li>
+            <li>✔️ Priority support</li>
+            <li>✔️ Advanced integrations</li>
+          </ul>
+          <button class="bg-gradient-to-r from-purple-500 to-indigo-500 px-4 py-2 rounded-md font-semibold hover:scale-105 transition">Start Free Trial</button>
+        </div>
+        <div class="reveal p-6 rounded-xl glass shadow-lg flex flex-col">
+          <div class="text-sm font-semibold text-white/90 mb-3">Team</div>
+          <div class="text-3xl font-bold mb-3">$25<span class="text-sm">/mo</span></div>
+          <ul class="text-sm text-white/75 mb-6 space-y-2">
+            <li>✔️ Multi-user seats</li>
+            <li>✔️ SSO & Admin controls</li>
+            <li>✔️ Dedicated support</li>
+          </ul>
+          <button class="mt-auto bg-white text-slate-900 px-4 py-2 rounded-md font-semibold hover:scale-105 transition">Contact Sales</button>
+        </div>
+      </div>
+    </section>
+
+   
+    <footer class="pt-8 border-t border-white/10 text-sm text-white/70">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>© <strong>TaskFlow</strong> — Built for focus and flow</div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:underline">Contact</a>
+          <a href="#" class="hover:underline">Privacy</a>
+          <div class="flex items-center gap-3">
+            <a href="#" aria-label="Twitter" class="p-2 rounded-md bg-white/5">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M22 4.01c-.7.31-1.45.52-2.24.62a3.88 3.88 0 0 0-6.62 3.53A11 11 0 0 1 3.11 3.15a3.86 3.86 0 0 0 1.2 5.16 3.82 3.82 0 0 1-1.75-.48v.05a3.88 3.88 0 0 0 3.11 3.8c-.49.13-1.01.13-1.5.05a3.89 3.89 0 0 0 3.62 2.7A7.76 7.76 0 0 1 2 18.58 11 11 0 0 0 8.29 20c6.54 0 10.12-5.43 10.12-10.12v-.46A7.2 7.2 0 0 0 22 4.01z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="p-2 rounded-md bg-white/5">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-12h4v2"></path>
+                <rect x="2" y="9" width="4" height="12" rx="1"></rect>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
